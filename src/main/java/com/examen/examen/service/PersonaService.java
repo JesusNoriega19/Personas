@@ -10,7 +10,7 @@ public interface PersonaService {
     Persona actualizar(Long id, Persona persona);
     void eliminar(Long id);
 
-    String obtenerFraseDeGato();
+    String obPokemon();
     int contarPersonasSP();
 
 }

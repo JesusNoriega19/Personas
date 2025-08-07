@@ -25,7 +25,7 @@ public class PersonaServiceImpl implements PersonaService{
     public List<Persona> obtenerTodos() {
         return repo.findAll().stream()
             .filter(p -> p.getCorreo().contains("@"))
-            .collect(Collectors.toList()); // Lambda aplicada
+            .collect(Collectors.toList());
     }
 
     @Override
@@ -58,7 +58,7 @@ public class PersonaServiceImpl implements PersonaService{
     private RestTemplate restTemplate;
 
     @Override
-    public String obtenerFraseDeGato() {
+    public String obPokemon() {
         return restTemplate.getForObject("https://pokeapi.co/api/v2/pokemon/", String.class);
     }
 

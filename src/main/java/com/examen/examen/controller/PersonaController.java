@@ -42,8 +42,8 @@ public class PersonaController {
     }
 
     @GetMapping("/pokemons")
-    public String fraseGato() {
-        return service.obtenerFraseDeGato();
+    public String obPokemon() {
+        return service.obPokemon();
     }
 
     @GetMapping("/contar")
